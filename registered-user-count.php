@@ -1,3 +1,4 @@
+<?php
 function custom_admin_bar_menu_new_user_count() {
     
     $user_query = new WP_User_Query( array(
