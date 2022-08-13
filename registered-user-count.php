@@ -8,7 +8,7 @@ function custom_admin_bar_menu_new_user_count() {
 
     foreach( $users as $user ) {
         $user_object = get_userdata( $user );
-        $cutoffdate = date('Y-m-d H:i:s', strtotime('-5 minute'));
+        $cutoffdate = date('Y-m-d H:i:s', strtotime('-5 minute'));  //you can change time here
         if( $user_object->user_registered > $cutoffdate ) {
             $items[] = $user_object->display_name;
             $rr = count($items);
